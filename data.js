@@ -1,11 +1,11 @@
 module.exports = [
     {
-        image: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.wallpaperflare.com%2Fsearch%3Fwallpaper%3DClube%2Bde%2BRegatas%2Bdo%2BFlamengo&psig=AOvVaw3XX3xCiraM0kUl7lktduiu&ust=1588886708343000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCMiT67WWoOkCFQAAAAAdAAAAABAD",
+        image: "/assets/team.png",
         title: "Você pensa que o Flamengo é time ?",
         alternatives: [
             'Flamengo não é time não',
             'É um time ruim',
-            'Flamengo é seleção p#*@%!!',
+            {right: 'Flamengo é seleção p#*@%!!', true:'true'},
             'Sim',
             'Mengão na veia!!',
             'Time é o Vasco da Gama',
@@ -13,10 +13,10 @@ module.exports = [
     },
 
     {
-        image: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fjesusmanero.blog.br%2Fo-dia-que-o-bruno-henrique-mostrou-pra-gente-que-decorar-texto-nao-e-muito-o-forte-dele%2F&psig=AOvVaw2XKnR21341zdF4cfFAi3Fa&ust=1588888281038000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKDx56CcoOkCFQAAAAAdAAAAABAR",
+        image: "/assets/player.png",
         title: "Qual é esse jogador do mengão ??",
         alternatives: [
-            'bruno henrique fo*#$&',
+            {right:'bruno henrique fo*#$&', true:'true'},
             'Carlos',
             'Roberto',
             'Tarcila',
@@ -26,54 +26,54 @@ module.exports = [
     },
 
     {
-        image: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fepoca.globo.com%2Fo-mitico-minuto-43-na-historia-dos-titulos-do-flamengo-1-24097609&psig=AOvVaw3vzZzbu4WhVhGzHvl56YbS&ust=1588887570114000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNiln8yZoOkCFQAAAAAdAAAAABAD",
-        title: "O Flamengo tem quantos títulos ?",
+        image: "/assets/win.jpeg",
+        title: "O Mengão tem quantos títulos ?",
         alternatives: [
             '0',
             '1234567',
             'Olê Olê Olê Olê o mengão vai vencê!',
             '69',
-            '137',
+            {right:'137', true:'true'},
             '19 metros'
         ]
     },
 
     {
-        image: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fbr.pinterest.com%2Fpin%2F644577765408152337%2F&psig=AOvVaw0xxn5FOwuqFzlFO7Z3c7Sf&ust=1588887751636000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCOiy6KqaoOkCFQAAAAAdAAAAABAW",
+        image: "/assets/new_player.jpg",
         title: "Qual o melhor jogador do mengão ?",
         alternatives: [
             'Pelé',
             'Gabigoooolll',
             'bruno henrique fo*#$&',
-            'Júlio César',
+            {right:'Júlio César', true:'true'},
             'Getúlio Vargas',
-            'Juan'
+            'Gerson'
         ]
     },
 
     {
-        image: "https://www.google.com/url?sa=i&url=https%3A%2F%2Faminoapps.com%2Fc%2Fclube-de-regatas-do-flamengo%2Fpage%2Fblog%2F4k-de-flamenguistas%2F2vVL_L1DuNu41o4PDMYoorYaLq7vrpbQq1&psig=AOvVaw3XX3xCiraM0kUl7lktduiu&ust=1588886708343000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCMiT67WWoOkCFQAAAAAdAAAAABAK",
+        image: "/assets/class_day.jpg",
         title: "Oquê tem hojê ?",
         alternatives: [
-            'Hoje tem gol do Gabigol p#*@%!!',
+            {right:'Hoje tem gol do Gabigol p#*@%!!',true:'true'},
             'Comer algo de quem está lendo',
             'Treino perna',
             'Bolsonaro não liga, idai?',
             'Aula do Matheus',
-            'Hoje tem gol do Ribamar'
+            'Hoje tem gol do Ribamaaa'
         ]
     },
 
     {
-        image: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.ricaperrone.com.br%2Fraca-amor-e-dinheiro%2F&psig=AOvVaw3XX3xCiraM0kUl7lktduiu&ust=1588886708343000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCMiT67WWoOkCFQAAAAAdAAAAABBJ",
+        image: "/assets/born.png",
         title: "Em qual dia Flamengo foi criado",
         alternatives: [
             '0236359',
-            '12/7/1990',
+            '12/7/1870',
             '8/5/2020',
             '3',
             '11/8/2001',
-            '17/11/1895'
+            {right:'17/11/1895', true:'true'},
         ]
     }
     
