@@ -9,16 +9,24 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: rgb(255, 255, 255);
+    padding-top: 150px;
 }
 
 .header {
-    max-width: 940px;
+    width: 85.5%;
     display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    
+    background-color: white;
 
     margin: 0 auto;
-    padding: 25px 1px;
+    padding: 25px 1px 10px;
     align-items: center;
     justify-content: space-between;
+
 }
 
 header img {
@@ -102,7 +110,7 @@ header a:hover {
     height: 100%;
 
     padding: 30px 20px 20px;
-    margin: 20px auto 0;
+    margin: 20px auto 30px;
     position: relative;
     
     border: 2px solid rgb(214, 0, 0);
@@ -207,4 +215,12 @@ header a:hover {
 
 .alternative p {
     font-size: 20px;
+}
+
+footer { 
+    max-width: 1740px;
+    text-align: center;
+    padding: 10px;
+
+    background-color: #acacac;
 }
