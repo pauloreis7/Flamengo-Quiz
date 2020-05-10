@@ -18,6 +18,15 @@ server.get("/", function (req, res) {
     return res.render("index")
 })
 
+server.get("/quest/:index", function (req, res) {
+    const questId = req.params.index
+    const fullQuest = questions[questId]
 
+    return res.render("quest", {fullQuest})
+})
+
+server.get("/result", function (req, res) {
+    return res.render("result")
+})
 
 server.listen(5000)
