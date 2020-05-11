@@ -6,7 +6,7 @@ const questions = require('./data')
 
 server.use(express.static('public'))
 
-server.set("view engine", "html")
+server.set("view engine", "njk")
 
 nunjucks.configure("views", {
     express:server,
@@ -20,9 +20,9 @@ server.get("/", function (req, res) {
 
 server.get("/quest/:index", function (req, res) {
     const questId = req.params.index
-    const fullQuest = questions[questId]
+    const quest = questions[questId]
 
-    return res.render("quest", {fullQuest})
+    return res.render("quest", {quest})
 })
 
 server.get("/result", function (req, res) {

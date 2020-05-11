@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        {% block title %}<title>Quiz Flamengo</title>{% endblock %}
+
+        <link rel="stylesheet" href="/styles.css">
+        <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    </head>
+    <body>
+
+        <header class="header">
+
+            <div class="logo">
+            
+                <a class="site" href="http://www.flamengo.com.br" target="_blank" >
+                    <img src="/assets/logo.png" alt="Foodfy Logo" />
+                </a> 
+                
+                <p>Site do Mengão</p>
+
+            </div>
+
+            <a href="/" id="begining">Início</a>
+
+        </header>
+
+        {% block content %} {% endblock %}
+
+        <footer><p>Todos os direitos Paulo Silva dos Reis 2020 &copy;</p></footer>
+        
+    </body>
+    
+    <script src="/scripts.js"></script>
+
+</html>

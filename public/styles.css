@@ -13,7 +13,7 @@ body {
 }
 
 .header {
-    width: 85.5%;
+    width: 100%;
     display: flex;
     position: fixed;
     top: 0;
@@ -93,6 +93,10 @@ header a {
     border-radius: 7px;
     cursor: pointer;
     box-shadow: 1px 1px 4px rgba(255, 14, 14, 0.842);
+}
+
+#begining {
+    margin: 0 250px 0 100px;
 }
 
 header a:hover {
@@ -210,7 +214,7 @@ header a:hover {
 
 /* QUEST */
 
-.content {
+.quests {
     max-width: 900px;
     height: 100%;
 
@@ -221,6 +225,21 @@ header a:hover {
     border: 2px solid rgb(214, 0, 0);
     box-shadow: 1px 1px 5px rgb(70, 70, 70);
     border-radius: 10px;
+}
+
+.number {
+    max-width: 15px;
+
+    padding: 5px 7px;
+    text-align: center;
+
+    border-radius: 50%;
+    background-color: rgb(255, 29, 29);
+    color: white;
+    font-weight: bold;
+    border: 3px solid rgba(44, 44, 44, 0.925);
+    
+
 }
 
 .featured {
@@ -363,10 +382,22 @@ header a:hover {
     border: 1px solid rgba(61, 61, 61, 0.19);
 }
 
+.true {
+    background-color: rgba(26, 177, 26, 0.95);
+    color: white;
+    font-weight: bold;
+}
+
+.false {
+    background-color: rgb(255, 32, 32);
+    color: white;
+    font-weight: bold;
+}
+
 footer { 
     max-width: 1740px;
     text-align: center;
     padding: 10px;
 
-    background-color: #acacac;
+    background-color: #c5c5c5;
 }

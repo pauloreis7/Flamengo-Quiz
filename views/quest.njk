@@ -1,0 +1,49 @@
+{% extends "layout.njk" %}
+
+    {% block title %} <title>Pergunta Flamengo</title> {% endblock %}
+
+    {% block content %}
+
+        <section class="quests">
+
+                <article class="quest">
+
+                        <div class="number" id="{{ quest.id }}">{{ quest.id }}</div>
+
+                    <a class="featured" href="https://www.goal.com/br/equipe/flamengo/partidas-resultados/102ykb145wz6dtveg65nistwm" target="_blank" rel="noopener noreferrer">Jogo do Mengão!!!</a>
+
+                    <section class="quest_image">
+
+                        <img src="{{ quest.image }}" alt="Foto descritiva" />
+
+                        <p class="illustrative">Imagem meramente ilustrativa</p>
+
+                    </section>
+
+                    <article class="quest_title">
+
+                        <h1>{{ quest.title }}</h1>
+
+                    </article>
+
+                    <section class="alternatives">
+
+                        {% for alternative in quest.alternatives %}
+
+                            <article class="alternative" id="{{ 'true' if alternative.right }}">
+                
+                                <p>{{ alternative.answer }}</p>
+
+                                <i class="material-icons">arrow_forward_ios</i> 
+
+                            </article>
+
+                        {% endfor %}
+
+                    </section>
+
+                </article>
+
+        </section>
+
+    {% endblock %}
