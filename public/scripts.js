@@ -1,11 +1,14 @@
 const alternatives = document.querySelectorAll('.alternative')
-const questNum = document.querySelector('.number')
-
 const questions = document.querySelectorAll('quests')
 
+const questNum = document.querySelector('.number')
+
+const tryId = questNum.getAttribute('id')
+
+let total = 0
 
 for (let alternative of alternatives) {
-        alternative.addEventListener('click', function () {
+        alternative.addEventListener('click', function save() {
             let alternativeId = alternative.getAttribute('id')
             
             const questId = questNum.getAttribute('id')
@@ -13,20 +16,19 @@ for (let alternative of alternatives) {
             if (questId == 6) {
              window.location.href = `/result`
             } else {
-              window.location.href = `/quest/${questId}`
+             window.location.href = `/quest/${questId}`
             }
 
-            if (alternativeId == 'true') {
-                let total = 0
-            
-                total = total + 1
-                    
-                return total
+            if (alternativeId == 'true') {   
+               let save = function setLocal() {
+                total  = total + 1
+                   
+                localStorage.setItem('total', total)
             }
-        })
+            save()
+        }
+        
+    })
 }
 
-for (let quest of questions) {
-    total = total + total
-    console.log(total)
-}
+console.log(total)
